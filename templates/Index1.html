@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Calories Prediction App</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <body>
+
+        <div class="Box">
+        </div>
+
+        <div class="Box_2">
+            <h1>Calories Prediction</h1>
+
+            <form id='form' action="{{url_for('predict')}}" ,method="POST">
+
+                <p> Gender </p>
+
+                <select name="gender">
+
+                <option value="" disabled selected hidden></option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+
+              </select>
+
+                <p> Age </p>
+                <input type="text" name="age" placeholder="Enter the Age" required>
+
+                <p> Duration </p>
+                <input type="text" name="duration" placeholder="Enter the Duration" required>
+
+                <p> Heart Rate </p>
+                <input type="text" name="heart_rate" placeholder="Enter the Heart Rate" required>
+                <p> Temperature </p>
+                <input type="text" name="temp" placeholder="Enter the Temperature" required>
+
+                <p> Weight </p>
+                <input type="text" name="weight" placeholder="Enter the Weight" required>
+
+                <input name="stt" type="submit" value="Predict">
+
+                <input name="" type="reset" onclick="myFunction()" value="Clear">
+
+                <script src="C:\Users\HP\Desktop\placements\projectcalories\static\javascr.js">
+                </script>
+
+
+            </form>
+
+
+        </div>
+
+
+    </body>
+
+</head>
+
+
+
+
+</html>
